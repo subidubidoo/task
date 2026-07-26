@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Final HTML</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playwrite+GB+J:ital,wght@0,100..400;1,100..400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1 tooltip="this is a heading">
+            Final HTML
+        </h1>
+        <p id="demo">
+            This is the final HTML file. It has a heading and a paragraph. The heading has a tooltip that says "this is a heading". 
+            The paragraph is just some text to fill the space.
+        </p>
+        <button onclick="document.getElementById('demo').style.color = 'white';">
+            Change paragraph color to white
+        </button>
+        <br>
+        <br>
+        <form id="tableForm">
+            <table >
+                <tr>
+                    <td>
+                        something
+                    </td>
+                    <td>
+                        something else
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        something
+                    </td>
+                    <td>
+                        something else
+                    </td>
+                </tr>
+            </table>
+        </form>
+        
+        <div id="div1">
+                <p>
+                    This is a div element. It contains a paragraph of text. The div element is used to group together related elements on a web page.
+                </p>
+        </div>
+        
+        <div id="tablechange">
+            <button onclick="document.getElementById('tableForm').style.backgroundColor = '#9ccdf8';">
+                change table background color
+            </button>
+            <br>
+            <br>
+            <button onclick="document.getElementById('tableForm').style.backgroundColor = 'white';">
+                reset table background color
+            </button>  
+            <br>
+            <br>
+        </div>
+
+        <div id="flower">
+       
+            <button onclick="document.getElementById('myImage').src='C:\\Users\\Lenovo\\Downloads\\bigger.png';">
+                 bigger
+            </button>
+            <img id="myImage" src="C:\\Users\\Lenovo\\Downloads\\smaller.png" alt="Image">
+            <button onclick="document.getElementById('myImage').src='C:\\Users\\Lenovo\\Downloads\\smaller.png';">
+                 smaller </button>
+
+         </div>
+
+         <p id="para"></p>
+         <script>
+            function myFunction() {
+                document.getElementById("para").innerHTML="my first javascript code";
+            }
+            
+            //document.write(10+3);
+
+            function alertt(){
+                // or alert("alert message");
+                window.alert("hello im here to alert");
+            }
+            let x=9;
+            let y=6;
+            alert(x+y);
+            const car={
+                type:"fiat",
+                model:"500",
+                color:"white"
+            };
+            car.color="red";
+            car.owner="john";
+            document.getElementById("para").innerHTML=car.owner;
+            
+         </script>
+         <br>
+            <button onclick="myFunction()">
+                click me
+            </button>
+
+         <br>
+         <br>
+            <button onclick="alertt()" style="text-align: center;">
+                message
+            </button>
+        <br>
+        <button onclick="window.print()" style="padding-left:100px; padding-right:100px ;margin: 60px;">print this page</button>
+        <p style="background-color: white; padding:20px; margin-right: 500px;">this is a sentence </p>
+   
+    </body>
+    <footer>
+        <p>
+            This is the footer of the page.
+        </p>
+    </footer>
+</html>
